@@ -8,4 +8,5 @@ read -e -p "Hora: " hour
 read -e -p "Minuto: " min
 
 echo "Ajustando reloj a: ${year}/${month}/${day} ${hour}:${min}"
+echo "sudo date --set=\"${year}${month}${day} ${hour}:${min}:00\""
 sudo date --set="${year}${month}${day} ${hour}:${min}:00"
